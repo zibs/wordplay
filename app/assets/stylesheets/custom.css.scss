@@ -1,0 +1,215 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: none;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'BebasNeue-Thin';
+    src: font-url("/assets/fonts/BebasNeue-Thin.otf") format("open type");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: font-url("/assets/fonts/BebasNeueRegular.otf") format("open type");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 62.5%;
+    margin: 1% 0;
+    max-width: 1300px;
+    font-family: "BebasNeue-Thin";
+}
+
+.navbar-header {
+    // width: 100%;
+    margin: 5vh 0 9vh 0;
+}
+
+header h1 {
+    font-size: 9em;
+}
+
+a {
+    color: #000;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+
+    }
+    &:link {
+        color: inherit;
+        text-decoration: none;
+
+    }
+}
+
+
+
+textarea {
+    height: 35vh;
+    width: 100%;
+    border: 1px solid #000;
+    font: 1.2em arial;
+
+    // &:focus {
+    // border-color: rgba(118, 255, 3, 1);
+    // box-shadow: 0 1px 1px rgba(118, 255, 3, 0.075) inset, 0 0 8px rgba(118, 255, 3, 0.6);
+    // outline: 0 none;
+    // }
+}
+
+
+.btn {
+    display: block;
+    background: #fff;
+    color: black;
+    border: 1px solid black;
+    min-width: 15%;
+}
+
+.calc-btn {
+    font-weight: bold;
+    margin-top: 1.5em;
+    padding-bottom: 3px;
+}
+
+
+
+#title_letter_color_1 {
+    color: rgba(255,244,0,1);
+}
+
+#title_letter_color_2 {
+    color: rgba(25,175,255,1);
+}
+
+pre.displayed_data {
+  
+  background-color: #fff;
+  border: none;
+
+}
+
+
+
+
+.results {
+    
+    h1 {
+        font-size: 7em;
+        // font-weight: bold;
+    &:first-letter{
+          color: rgba(25,175,255,1);
+    } }
+    pre {
+      background: #fff;
+      margin-bottom: 0;
+    }
+    li {
+      display: inline;
+      list-style-type: none;
+      font-family: 'Menlo';
+      font-size: 0.65em;
+      
+    }
+    ul {
+      font-family: 'futura';
+      font-size: 2.0em;
+      padding: 0 0 1% 0;
+      list-style-type: none;
+
+    }
+    #second_letter {
+     color: rgba(255,0,130,1);
+
+    }
+    #fifth_letter {
+      color: rgba(255,244,0,1);
+
+    }
+}
+
+footer {
+padding: 1% 0
+}
+
+// want auto-resize textarea
