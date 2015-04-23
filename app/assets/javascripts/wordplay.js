@@ -3,7 +3,6 @@
     scrollTop: $("#results").offset().top
    }, 700);
   });
-
   $(document).ready(function () {
   	$(".reset-btn").click(function() { 
   	$("html:not(:animated),body:not(:animated)").animate({
@@ -11,7 +10,6 @@
    }, 500 );
   	});
   });
-  
 $(document).ready(function() {
 $('.reset-btn').click(function (e) {
     e.preventDefault();                   // prevent default anchor behavior
@@ -24,7 +22,3 @@ $('.reset-btn').click(function (e) {
     },310);       
 });
 });
-
-
-// click reset button
-// reset #textblock_content
