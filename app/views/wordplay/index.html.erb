@@ -1,7 +1,7 @@
 <section class="row">
 	<div class="textbox col-md-9 col-md-offset-2">
 	<%= form_for(:textblock, url: '/index') do |f| %>
-		<%= f.text_area :content, placeholder: "...", required: true%>
+		<%= f.text_area :content, placeholder: "Enter some text...", required: true%>
 		<%= f.submit "Calculate", class: "btn btn-primary calc-btn pull-right"%>
 			<% end %>		
 	</div>
